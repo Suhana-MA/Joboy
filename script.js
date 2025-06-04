@@ -1,4 +1,3 @@
-
 const countryBtn = document.querySelector('.country-btn');
 const dropdownList = document.querySelector('.dropdown-list');
 
@@ -18,4 +17,18 @@ document.querySelectorAll('.dropdown-item').forEach(item => {
         countryBtn.textContent = this.textContent;
         dropdownList.style.display = 'none';
     });
+});
+
+let lastScrollY = window.scrollY;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        header.classList.add('header-hidden');
+    } else {
+        // Scrolling up
+        header.classList.remove('header-hidden');
+    }
+    lastScrollY = window.scrollY;
 });
