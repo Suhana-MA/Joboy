@@ -28,8 +28,8 @@ header {
     z-index: 100;
 }
 .logo {
-    height: 80px;
-    margin-right: 32px;
+    height: 60px;
+    margin-right: 40px;
 }
 nav {
     display: flex;
@@ -49,18 +49,18 @@ nav a:hover {
     color: #ffc107;
 }
 .country-btn {
-    background: #fff3cd;
+    background: #fff;
     color: #ffc107;
-    border: 2px solid #ffc107;
+    border: 2px dashed #ffc107;
     border-radius: 6px;
     padding: 10px 24px;
     font-weight: bold;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.15rem;
     cursor: pointer;
     margin-left: 16px;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    box-shadow: none;
+    outline: none;
 }
 .banner {
     width: 100%;
@@ -247,23 +247,25 @@ footer {
     top: 110%;
     left: auto;
     right: 0;
-    background: #fff3cd;
-    border: 2px solid #ffc107;
+    background: #fff;
     border-radius: 6px;
-    min-width: 200px;
+    min-width: 240px;
     z-index: 10;
-    box-shadow: 0 2px 8px #eee;
+    box-shadow: 0 2px 16px #eee;
+    border: none;
+    padding: 8px 0;
 }
 
 .dropdown-item {
     padding: 10px 24px;
-    color: #222;
+    color: #7a7a7a;
     cursor: pointer;
-    font-weight: 500;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    font-weight: 600;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.15rem;
+    background: none;
+    border: none;
+    transition: background 0.2s, color 0.2s;
 }
 
 .dropdown-item:hover {
@@ -276,14 +278,14 @@ footer {
     background: #555;
     color: #fff;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     padding: 32px 0 24px 0;
     gap: 32px;
     font-family: 'Poppins', Arial, sans-serif;
 }
 .expert-text {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-right: 32px;
     line-height: 1.2;
