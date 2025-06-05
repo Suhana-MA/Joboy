@@ -358,3 +358,97 @@ footer {
 body, h1, h2, h3, h4, h5, h6, p, a, li, button, input, select, textarea, .dropdown-item, .country-btn, .register-btn, .role, .member-info, .footer-content, .copyright {
     font-family: 'Poppins', Arial, sans-serif !important;
 }
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 16px;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .logo {
+        margin: 0 auto;
+        height: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    .country-dropdown,
+    .country-btn {
+        width: 100%;
+        max-width: 300px;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .country-btn {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .dropdown-list {
+        position: absolute;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 300px;
+        right: auto;
+    }
+
+    .dropdown-item {
+        font-size: 1rem;
+        padding: 10px 16px;
+        text-align: center;
+    }
+
+    .hamburger-icon {
+        display: none !important;
+    }
+
+    nav.nav-visible {
+        display: flex !important;
+    }
+
+    .member-info {
+        padding: 24px 16px;
+        width: 95vw;
+        max-width: 320px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .member-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .member-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .linkedin {
+        margin-left: 0;
+    }
+
+    .role {
+        font-size: 0.9rem;
+        margin: 4px 0 12px 0;
+    }
+
+    main {
+        padding-top: 180px;
+    }
+}
